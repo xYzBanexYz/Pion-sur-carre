@@ -29,5 +29,4 @@ Nous intégrons plusieurs **packs de textures** pour personnaliser l'apparence d
 ## 📂 Installation & Exécution
 1. **Cloner le projet** :
    ```sh
-   git clone https://github.com/ton-repo/echiquier-flutter.git
-   cd echiquier-flutter
+   git clone https://github.com/xYzBanexYz/Pion-sur-carre
