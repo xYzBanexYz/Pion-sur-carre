@@ -1,25 +1,25 @@
-# ♟️ Échiquier – Flutter
-
+# ♟️ PionSurCarré – Jeu d'Échecs
 ## 📌 Présentation
-Ce projet consiste à développer un **jeu d'échecs interactif** avec Flutter. Il inclut les fonctionnalités classiques du jeu d’échecs ainsi que des options supplémentaires pour enrichir l’expérience de jeu.
+PionSurCarré est un jeu d’échecs interactif développé avec Flutter, pensé pour offrir à la fois une expérience fidèle au jeu d’origine et une touche d’originalité avec plusieurs modes de jeu spéciaux et des packs graphiques personnalisés. Que tu sois puriste ou aventurier du damier, il y en a pour tous les goûts !
 
 ## 🚀 Fonctionnalités principales
-✅ Indication du **changement de tour**  
-✅ **Affichage des déplacements possibles**  
-✅ **Timer** personnalisable avec bouton Pause  
-✅ **Différents modes de jeu** :
-  - Classique  
-  - Full Cavalier  
-  - Devient ce que tu manges  
-✅ **Personnalisation des pièces et de l'échiquier** via des packs graphiques  
+✅ Indication claire du tour actuel (Blanc / Noir)
+✅ Affichage dynamique des déplacements valides
+✅ Boutons d’abandon pour chaque joueur
+✅ Système de capture avec affichage des pièces prises
+✅ Système de mods, activables à tout moment :
+    🧟 Zombies : une pièce devient la pièce qu’elle capture
+    👑 Full Queen : toutes les pièces deviennent des reines
+    🎲 Spawn : un pion apparaît automatiquement tous les 7 tours
+✅ Packs de textures personnalisables pour les pièces
 
 ## 🎨 Packs de textures graphiques
-Nous intégrons plusieurs **packs de textures** pour personnaliser l'apparence des pièces et de l'échiquier :
+Chaque pack modifie l'apparence des pièces et de l'échiquier pour offrir une expérience visuelle unique.
 
-- 🎄 **Noël** : Pièces en forme de sapins, cadeaux et bonshommes de neige.  
-- 👻 **Invisible** : Les pions deviennent invisibles pour un gameplay plus stratégique.  
-- ⛏️ **Minecraft** : Un style pixelisé inspiré du jeu Minecraft.  
-- ♟️ **Classique** : Design traditionnel et épuré.  
+🎄 Noël : Bonshommes de neige, cadeaux et magie des fêtes
+👻 Invisible : Certains pions deviennent invisibles pour un défi stratégique
+⛏️ Minecraft : Design pixelisé inspiré du célèbre jeu
+♟️ Classique : Sobre et traditionnel, pour les puristes
 
 ## 🛠️ Technologies utilisées
 - **Flutter** (Dart) pour le développement cross-platform  
@@ -30,3 +30,4 @@ Nous intégrons plusieurs **packs de textures** pour personnaliser l'apparence d
 1. **Cloner le projet** :
    ```sh
    git clone https://github.com/xYzBanexYz/Pion-sur-carre
+   ```
