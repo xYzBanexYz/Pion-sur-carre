@@ -377,15 +377,15 @@ class _GameBoardState extends State<GameBoard> {
   ChessPiece createPieceFromOther(ChessPiece source, bool isWhite) {
     switch (source.type) {
       case ChessPieceType.queen:
-        return ChessPiece(type: ChessPieceType.queen, isWhite: true);
+        return ChessPiece(type: ChessPieceType.queen, isWhite: isWhite);
       case ChessPieceType.tower:
-        return ChessPiece(type: ChessPieceType.tower, isWhite: true);
+        return ChessPiece(type: ChessPieceType.tower, isWhite: isWhite);
       case ChessPieceType.bishop:
-        return ChessPiece(type: ChessPieceType.bishop, isWhite: true);
+        return ChessPiece(type: ChessPieceType.bishop, isWhite: isWhite);
       case ChessPieceType.knight:
-        return ChessPiece(type: ChessPieceType.knight, isWhite: true);
+        return ChessPiece(type: ChessPieceType.knight, isWhite: isWhite);
       case ChessPieceType.pawn:
-        return ChessPiece(type: ChessPieceType.pawn, isWhite: true);
+        return ChessPiece(type: ChessPieceType.pawn, isWhite: isWhite);
       default:
         return source;
     }
@@ -511,10 +511,16 @@ class _GameBoardState extends State<GameBoard> {
       if (board[7][7] == null) {
         board[7][7] = getRandomPiece(true); // true = blanc
       }
+      if (board[7][0] == null) {
+        board[7][0] = getRandomPiece(true); // false = blanc
+      }
 
       // Noirs : colonne 7 (droite) ligne 0
       if (board[0][7] == null) {
         board[0][7] = getRandomPiece(false); // false = noir
+      }
+      if (board[0][0] == null) {
+        board[0][0] = getRandomPiece(false); // false = noir
       }
     }
   }
